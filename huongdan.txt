@@ -1,0 +1,9 @@
+thu muc chua .pem: /etc/.cert/localhost+6.pem
+chua cac domain https sau: localhost , tungocvan.tk, tungocvan.local, tungocvan.test
+
+chi can import  mkcert.crt vao trinh duyet la chay duoc https tren localhost - /usr/local/share/ca-certificates/mkcert.crt vao trinh duyet 
+   
+    listen 443 ssl;
+    server_name localhost tungocvan.tk;
+    ssl_certificate /etc/.cert/localhost+6.pem;
+    ssl_certificate_key /etc/.cert/localhost+6-key.pem;
